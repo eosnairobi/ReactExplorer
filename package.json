@@ -1,0 +1,19 @@
+{
+  "name": "eos_explorer",
+  "version": "1.0.0",
+  "description": "All-in-one wallet to secure, manage and exchange blockchain assets.",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "client": "npm start --prefix client"
+  },
+  "author": "Alpha Nganga Ndirangu",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "concurrently": "*"
+  },
+  "devDependencies": {
+    "nodemon": "*"
+  }
+}
