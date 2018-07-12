@@ -10,7 +10,7 @@ export default class Top extends Component {
               <img
                 alt="Spin Logo Inverted"
                 className="h-20"
-                src="../assets/images/spin-logo-inverted-@2X.png"
+                src="../assets/images/favicon.png"
               />
             </a>
             <button
