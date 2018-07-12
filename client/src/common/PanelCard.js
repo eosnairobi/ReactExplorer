@@ -3,15 +3,16 @@ import PropTypes from "prop-types";
 
 const PanelCard = ({ name, price, type }) => {
   return (
-    <div class="col-lg-3 col-md-6 col-sm-6">
+    <div className="col-lg-3 col-md-6 col-sm-6">
       {/* <!-- START RAM Price --> */}
-      <div class="panel panel-default b-a-0 bg-gray-dark">
-        <div class="panel-heading">{name}</div>
-        <div class="panel-body">
-          <h2 class="m-t-0 f-w-300">
+      <div className="panel panel-default b-a-0 bg-gray-dark">
+        <div className="panel-heading">{name}</div>
+        <div className="panel-body">
+          <h2 className="m-t-0 f-w-300">
             <span>{price} </span>
           </h2>
-          <i class="fas fa-fw fas-caret-up text-success" /> <span>{type}</span>
+          <i className="fas fa-fw fas-caret-up text-success" />{" "}
+          <span>{type}</span>
         </div>
       </div>
       {/* <!-- END RAM Price  --> */}

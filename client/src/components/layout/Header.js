@@ -5,7 +5,7 @@ import Side from "../Navigation/Side";
 class Header extends Component {
   render() {
     return (
-      <nav class="navigation">
+      <nav className="navigation">
         {/* START Navbar */}
         <Top />
         {/* END Navbar */}

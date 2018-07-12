@@ -7,10 +7,9 @@ export default () => {
       <img
         src={spinner}
         style={{
-          width: "200px",
+          width: "4rem",
           margin: "auto",
-          display: "block",
-          backgroundColor: "transparent"
+          display: "block"
         }}
         alt="Loading..."
       />
