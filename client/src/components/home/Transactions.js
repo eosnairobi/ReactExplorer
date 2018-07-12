@@ -18,41 +18,7 @@ class Transactions extends Component {
     let transactionContent;
 
     if (get_transactions === null || loading) {
-      transactionContent = (
-        <tr>
-          <td className="v-a-m">
-            <div className="media media-auto">
-              <div className="media-left">
-                <a href="javascript: void(0)">
-                  <img
-                    className="media-object img-circle"
-                    style={{ width: "35px" }}
-                    src="https://s3.amazonaws.com/uifaces/faces/twitter/lvovenok/128.jpg"
-                    alt="Avatar"
-                  />
-                </a>
-              </div>
-              <div className="media-body">
-                <span className="media-heading text-white">Alpha Nganga</span>
-                <br />
-                <span className="media-heading">
-                  <span>on May 18, 2017 </span>
-                </span>
-              </div>
-            </div>
-          </td>
-          <td className="v-a-m">
-            <span>IDR 515.00</span>
-          </td>
-          <td className="v-a-m">
-            <span> 3 days</span>
-          </td>
-          <td className="v-a-m">
-            <i className="fa fa-circle text-success m-r-1" />{" "}
-            <span className="text-success">Confirmed</span>
-          </td>
-        </tr>
-      );
+      transactionContent = <Spinner />;
     } else {
       if (Object.keys(get_transactions).length > 0) {
         transactionContent = Object.entries(get_transactions).map(e => {
