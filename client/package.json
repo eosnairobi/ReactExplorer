@@ -18,5 +18,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://mainnet.eoscanada.com/v1/chain/get_producers"
+  "proxy": "http://mainnet.eoscanada.com/v1"
 }
