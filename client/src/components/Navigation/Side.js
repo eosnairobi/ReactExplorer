@@ -1,139 +1,142 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
 export default class Side extends Component {
   render() {
     return (
-      <aside class="navbar-default sidebar">
-        <div class="sidebar-overlay-head">
+      <aside className="navbar-default sidebar">
+        <div className="sidebar-overlay-head">
           EOS | BlockExplorerr
-          <a href="#" class="sidebar-switch action-sidebar-close">
-            <i class="fas fa-times" />
-          </a>
+          <Link to="#" className="sidebar-switch action-sidebar-close">
+            <i className="fas fa-times" />
+          </Link>
         </div>
 
-        <div class="sidebar-content">
-          <div class="sidebar-default-visible text-muted small text-uppercase sidebar-section p-y-2">
+        <div className="sidebar-content">
+          <div className="sidebar-default-visible text-muted small text-uppercase sidebar-section p-y-2">
             <strong>Navigation</strong>
           </div>
 
           {/* <!-- START Tree Sidebar Common --> */}
-          <ul class="side-menu">
-            <li class="Dashboards">
-              <a href="#" title="Dashboards">
-                <i class="fas fa-tachometer-alt" />{" "}
-                <span class="nav-label">Dashboard</span>
-              </a>
+          <ul className="side-menu">
+            <li className="Dashboards">
+              <Link to="#" title="Dashboards">
+                <i className="fas fa-tachometer-alt" />{" "}
+                <span className="nav-label">Dashboard</span>
+              </Link>
               <ul>
-                <li class="active">
-                  <a href="../start/home.html">
-                    <span class="nav-label">Home</span>
-                  </a>
+                <li className="active">
+                  <Link to="/">
+                    <span className="nav-label">Home</span>
+                  </Link>
                 </li>
-                <li class="">
-                  <a href="../start/producers.html">
-                    <span class="nav-label">Producers</span>
-                  </a>
+                <li className="">
+                  <Link to="/producers">
+                    <span className="nav-label">Producers</span>
+                  </Link>
                 </li>
-                <li class="">
-                  <a href="../start/blocks.html">
-                    <span class="nav-label">Blocks</span>
-                  </a>
+                <li className="">
+                  <Link to="/blocks">
+                    <span className="nav-label">Blocks</span>
+                  </Link>
                 </li>
-                <li class="">
-                  <a href="../start/accounts.html">
-                    <span class="nav-label">Top Accounts</span>
-                  </a>
+                <li className="">
+                  <Link to="/accounts">
+                    <span className="nav-label">Top Accounts</span>
+                  </Link>
                 </li>
               </ul>
             </li>
 
             <li>
-              <a href="#" title="Dashboards">
-                <i class="far fa-chart-bar active" />{" "}
-                <span class="nav-label">Charts & Graphs</span>
-                {/* <!-- <span class="pull-right label label-primary label-outline text-uppercase">New</span> --> */}
-              </a>
+              <Link to="#" title="Dashboards">
+                <i className="far fa-chart-bar active" />{" "}
+                <span className="nav-label">Charts & Graphs</span>
+                {/* <!-- <span className="pull-right label label-primary label-outline text-uppercase">New</span> --> */}
+              </Link>
               <ul>
-                <li class="">
-                  <a href="../charts/prices.html">
-                    <span class="nav-label">Token Price </span>
-                  </a>
+                <li className="">
+                  <Link to="../charts/prices.html">
+                    <span className="nav-label">Token Price </span>
+                  </Link>
                 </li>
-                <li class="">
-                  <a href="../charts/marketcap.html">
-                    <span class="nav-label">Market Capitalization</span>
-                  </a>
+                <li className="">
+                  <Link to="../charts/marketcap.html">
+                    <span className="nav-label">Market Capitalization</span>
+                  </Link>
                 </li>
-                <li class="">
-                  <a href="../charts/prices.html">
-                    <span class="nav-label">Transactions Volume</span>
-                  </a>
+                <li className="">
+                  <Link to="../charts/prices.html">
+                    <span className="nav-label">Transactions Volume</span>
+                  </Link>
                 </li>
-                <li class="">
-                  <a href="../charts/prices.html">
-                    <span class="nav-label">Transactions Fees</span>
-                  </a>
+                <li className="">
+                  <Link to="../charts/prices.html">
+                    <span className="nav-label">Transactions Fees</span>
+                  </Link>
                 </li>
-                <li class="">
-                  <a href="../charts/suply.html">
-                    <span class="nav-label">Total Supply Chart</span>
-                  </a>
+                <li className="">
+                  <Link to="../charts/suply.html">
+                    <span className="nav-label">Total Supply Chart</span>
+                  </Link>
                 </li>
-                <li class="">
-                  <a href="../charts/prices.html">
-                    <span class="nav-label">Accounts growth rate</span>
-                  </a>
+                <li className="">
+                  <Link to="../charts/prices.html">
+                    <span className="nav-label">Accounts growth rate</span>
+                  </Link>
                 </li>
-                <li class="">
-                  <a href="../charts/marketcap.html">
-                    <span class="nav-label">Top DEX Chart</span>
-                  </a>
+                <li className="">
+                  <Link to="../charts/marketcap.html">
+                    <span className="nav-label">Top DEX Chart</span>
+                  </Link>
                 </li>
-                <li class="">
-                  <a href="../charts/marketcap.html">
-                    <span class="nav-label">Name Bids Chart</span>
-                  </a>
+                <li className="">
+                  <Link to="../charts/marketcap.html">
+                    <span className="nav-label">Name Bids Chart</span>
+                  </Link>
                 </li>
-                <li class="">
-                  <a href="../charts/marketcap.html">
-                    <span class="nav-label">RAM Auction Chart</span>
-                  </a>
+                <li className="">
+                  <Link to="../charts/marketcap.html">
+                    <span className="nav-label">RAM Auction Chart</span>
+                  </Link>
                 </li>
               </ul>
             </li>
           </ul>
           {/* <!-- END Tree Sidebar Common  --> */}
 
-          <div class="sidebar-default-visible">
+          <div className="sidebar-default-visible">
             <hr />
           </div>
 
-          <div class="sidebar-default-visible sidebar-section m-b-2" id="links">
-            <span class="small text-muted text-uppercase p-b-2 block">
+          <div
+            className="sidebar-default-visible sidebar-section m-b-2"
+            id="links"
+          >
+            <span className="small text-muted text-uppercase p-b-2 block">
               <strong>Links</strong>
             </span>
             <br />
             <br />
-            <a href="#">
+            <Link to="#">
               <p>
-                <i class="fas fa-envelope" /> Contact Us
+                <i className="fas fa-envelope" /> Contact Us
               </p>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
               <p>
-                <i class="fas fa-users" /> About Us
+                <i className="fas fa-users" /> About Us
               </p>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
               <p>
-                <i class="fab fa-twitter" /> Twitter
+                <i className="fab fa-twitter" /> Twitter
               </p>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
               <p>
-                <i class="fab fa-telegram" /> Telegram
+                <i className="fab fa-telegram" /> Telegram
               </p>
-            </a>
+            </Link>
             <br />
           </div>
         </div>

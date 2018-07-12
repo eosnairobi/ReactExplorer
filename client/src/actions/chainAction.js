@@ -34,11 +34,8 @@ export const getInfo = () => dispatch => {
 req: POST
 des: get_producers
 */
-const producerParams = {
-  json: "true",
-  limit: "300"
-};
-export const getProducers = () => dispatch => {
+
+export const getProducers = producerParams => dispatch => {
   dispatch(setProfileLoading());
   axios
     .post("/chain/get_producers", producerParams)
