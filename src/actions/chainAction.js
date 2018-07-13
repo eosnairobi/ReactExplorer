@@ -1,7 +1,7 @@
 import axios from "axios";
 
 import { GET_INFO, PROFILE_LOADING, GET_PRODUCERS } from "./types";
-const url = "https://mainnet.eoscanada.com/v1";
+
 // Profile loading
 export const setProfileLoading = () => {
   return {
@@ -15,7 +15,7 @@ export const setProfileLoading = () => {
 export const getInfo = () => dispatch => {
   dispatch(setProfileLoading());
   axios
-    .get(`${url}/chain/get_info`)
+    .get("/chain/get_info")
     .then(res =>
       dispatch({
         type: GET_INFO,
@@ -38,7 +38,7 @@ des: get_producers
 export const getProducers = producerParams => dispatch => {
   dispatch(setProfileLoading());
   axios
-    .post(`${url}/chain/get_producers`, producerParams)
+    .post("/chain/get_producers", producerParams)
     .then(res =>
       dispatch({
         type: GET_PRODUCERS,
