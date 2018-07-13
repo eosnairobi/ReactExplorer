@@ -1,7 +1,7 @@
 import axios from "axios";
 
 import { GET_INFO, PROFILE_LOADING, GET_PRODUCERS } from "./types";
-const url = "http://mainnet.eoscanada.com/v1";
+const url = "https://mainnet.eoscanada.com/v1";
 // Profile loading
 export const setProfileLoading = () => {
   return {
