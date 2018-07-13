@@ -159,7 +159,7 @@ class Producer extends Component {
                       </ul>
                     </div>
                     {/* <!-- END Dropdown SM Actions --> */}
-                    Daily Rewards:{" "}
+                    Total Votes:{" "}
                     <span className="text-white">
                       {Math.round(total_votes)}
                     </span>
@@ -182,7 +182,7 @@ class Producer extends Component {
               <div className="col-md-12 col-sm-12  col-xs-12">
                 {/* <!-- START Header --> */}
                 <h3 className="f-w-300 m-t-1">
-                  Producers
+                  Producers :::: {total_votes_percentage}
                   <div class="progress" style={{ width: "100%" }}>
                     <div
                       class="progress-bar progress-bar-striped active"

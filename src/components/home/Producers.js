@@ -54,7 +54,7 @@ class Producers extends Component {
                 <span>{location}</span>
               </td>
               <td className="v-a-m">
-                <span>Votes</span>
+                <span>{Math.round(total_votes)}</span>
               </td>
               <td className="v-a-m">
                 <i className="fa fa-circle text-success m-r-1" />Confirmed
