@@ -20,6 +20,9 @@ class Producer extends Component {
   }
   componentDidMount() {
     const producerParams = {
+      headers: {
+        "Access-Control-Allow-Origin": "*"
+      },
       json: "true",
       limit: "300"
     };

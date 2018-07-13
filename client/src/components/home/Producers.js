@@ -10,6 +10,9 @@ import isEmpty from "../../validation/is-empty";
 class Producers extends Component {
   componentDidMount() {
     const producerParams = {
+      headers: {
+        "Access-Control-Allow-Origin": "*"
+      },
       json: "true",
       limit: "12"
     };
