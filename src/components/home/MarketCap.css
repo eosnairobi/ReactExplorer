@@ -1,2 +1,5 @@
-.coinmarketcap-currency-widget {
+.coinmarketcap-currency-widget,
+span {
+  color: white;
+  font-size: 1rem;
 }
