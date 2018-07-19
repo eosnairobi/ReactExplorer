@@ -48,7 +48,13 @@ class Producers extends Component {
           return (
             <tr>
               <td className="v-a-m">
-                <span className="text-white">{owner}</span>
+                <span
+                  className="text-white"
+                  className="m-b-1"
+                  style={{ transform: "uppercase" }}
+                >
+                  {owner}
+                </span>
               </td>
               <td className="v-a-m">
                 <span>{location}</span>
@@ -57,7 +63,7 @@ class Producers extends Component {
                 <span>{Math.round(total_votes)}</span>
               </td>
               <td className="v-a-m">
-                <i className="fa fa-circle text-success m-r-1" />Confirmed
+                <i className="fas fa-circle text-success m-r-1" />
               </td>
             </tr>
           );
@@ -68,12 +74,12 @@ class Producers extends Component {
       <div className="col-lg-6">
         <div className="row">
           <div className="col-md-4 col-sm-4 col-xs-6">
-            <h5 className="m-b-0 m-t-0 f-w-300">Latest Producers</h5>
+            <h5 className="m-b-0 m-t-0 f-w-300">Top Producers</h5>
           </div>
           <div className="col-md-4 col-sm-4 col-sm-4 col-sm-offset-4 col-md-offset-4 col-xs-offset-2 text-right">
             <Link to="/producers">
               <button type="button" className="btn btn-sm btn-default">
-                See All Producers<i className="fa m-l-1 fa-angle-right" />{" "}
+                See All Producers<i className="fas m-l-1 fa-angle-right" />{" "}
               </button>
             </Link>
           </div>
@@ -88,11 +94,11 @@ class Producers extends Component {
                 <strong>Location</strong>
               </th>
               <th className="small text-muted text-uppercase">
-                <strong>Votes %</strong>
+                <strong>Total Votes</strong>
               </th>
 
               <th className="small text-muted text-uppercase">
-                <strong>Total Votes</strong>
+                <strong>Status</strong>
               </th>
             </tr>
           </thead>

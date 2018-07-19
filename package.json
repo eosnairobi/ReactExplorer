@@ -5,6 +5,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "react": "^16.4.1",
+    "react-animated-number": "^0.4.4",
     "react-dom": "^16.4.1",
     "react-redux": "*",
     "react-router-dom": "^4.3.1",

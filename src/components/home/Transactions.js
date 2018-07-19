@@ -55,7 +55,7 @@ class Transactions extends Component {
                 <span> 3 days</span>
               </td>
               <td className="v-a-m">
-                <i className="fa fa-circle text-success m-r-1" />Confirmed
+                <i className="fas fa-circle text-success m-r-1" />Confirmed
               </td>
             </tr>
           );
@@ -72,7 +72,7 @@ class Transactions extends Component {
             <Link to="/transactions">
               {" "}
               <button type="button" className="btn btn-sm btn-default">
-                See All Transactions<i className="fa m-l-1 fa-angle-right" />{" "}
+                See All Transactions<i className="fas m-l-1 fa-angle-right" />{" "}
               </button>
             </Link>
           </div>
