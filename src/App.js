@@ -8,6 +8,7 @@ import "./App.css";
 import Home from "./components/home/Home";
 import Header from "./components/layout/Header";
 import Producer from "./components/Producer/Producer";
+import Block from "./components/block/Block";
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
             <Header />
             <Route exact path="/" component={Home} />
             <Route exact path="/producers" component={Producer} />
+            <Route exact path="/blocks" component={Block} />
           </div>
         </Router>
       </Provider>

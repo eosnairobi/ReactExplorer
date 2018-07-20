@@ -114,6 +114,10 @@ class Producer extends Component {
                   </div>
                   {/* <!-- END Media Task Name --> */}
                   Last Claim Time:{" "}
+                  {/* 1532012710500000
+                  var utcSeconds = 1234567890;
+                  var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
+                  d.setUTCSeconds(utcSeconds); */}
                   <span className="text-white">{last_claim_time}</span>
                 </div>
                 <ul className="list-group no-bg">
