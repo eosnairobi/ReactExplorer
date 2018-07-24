@@ -113,52 +113,15 @@ class Producer extends Component {
                     </div>
                   </div>
                   {/* <!-- END Media Task Name --> */}
-                  Time: <span className="text-white">{last_claim_time}</span>
+                  Last Claim Time:{" "}
+                  {/* 1532012710500000
+                  var utcSeconds = 1234567890;
+                  var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
+                  d.setUTCSeconds(utcSeconds); */}
+                  <span className="text-white">{last_claim_time}</span>
                 </div>
                 <ul className="list-group no-bg">
                   <li className="list-group-item  no-bg">
-                    {/* <!-- START Widget - Usage --> */}
-                    <div className="progress b-r-a-0 m-t-0 m-b-1 h-3">
-                      <div
-                        className="progress-bar"
-                        role="progressbar"
-                        aria-valuenow="60"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                        style={{ width: "60%" }}
-                      >
-                        <span className="sr-only">60% Complete</span>
-                      </div>
-                    </div>
-                    <span className="m-t-0">
-                      Percentage:{" "}
-                      <span className="text-white">60% Complete</span>
-                    </span>
-                    {/* <!-- END Widget - Usage --> */}
-                  </li>
-                  <li className="list-group-item  no-bg">
-                    {/* <!-- START Dropdown SM Actions --> */}
-                    <div className="btn-group pull-right">
-                      <button
-                        type="button"
-                        className="btn btn-default  btn-xs dropdown-toggle"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="faslse"
-                      >
-                        <i className="fas fa-fw fa-gear" />{" "}
-                        <span className="caret" />
-                      </button>
-                      <ul className="dropdown-menu dropdown-menu-right">
-                        <li>
-                          <a href="tasks-list.html">
-                            <i className="fas fa-fw fa-folder-open text-gray-lighter m-r-1" />{" "}
-                            View
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    {/* <!-- END Dropdown SM Actions --> */}
                     Total Votes:{" "}
                     <span className="text-white">
                       {Math.round(total_votes)}
@@ -182,10 +145,10 @@ class Producer extends Component {
               <div className="col-md-12 col-sm-12  col-xs-12">
                 {/* <!-- START Header --> */}
                 <h3 className="f-w-300 m-t-1">
-                  Producers :::: {total_votes_percentage}
+                  {/* Producers :::: {total_votes_percentage} */}
                   <div class="progress" style={{ width: "100%" }}>
                     <div
-                      class="progress-bar progress-bar-striped active"
+                      class="progress-bar progress-bar active"
                       role="progressbar"
                       aria-valuenow="45"
                       aria-valuemin="0"

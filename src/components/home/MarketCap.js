@@ -19,7 +19,7 @@ class MarketCap extends Component {
     let coincontent;
 
     if (isEmpty(coin) || loading) {
-      coincontent = "test";
+      // coincontent = "test";
     } else {
       if (Object.keys(coin).length > 0) {
         coincontent = Object.entries(coin).map(e => {
